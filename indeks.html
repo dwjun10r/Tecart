@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="app">
+
+        <section class="Create-todo">
+            <h1>CREATE A TODO LIST</h1>
+
+            <form id="new-todo-form">
+
+                <h3>What's on your todo? </h3>
+
+            </form>
+        </section>
+
+        <div class="input-container">
+            <input type="teks" id="todo-description" placeholder="Description">
+            <select id="todo-priority">
+                <option value="urgent">Urgent</option>
+                <option value="normal">Normal</option>
+                <option value="not urgent">Not Urgent</option>
+            </select>
+            <input type="date" id="todo-date">
+            <input type="time" id="todo-time">
+            <button id="add-task-btn">Add</button>
+        </div>
+
+        <div class="filter-container">
+            <input type="text" id="search-bar" placeholder="Search todo list...">
+            <select id="filter-container">
+                <option value="all">All</option>
+                <option value="Done">Done</option>
+                <option value="not done">Not done</option>
+                <option value="Overdue">Overdue</option>
+                <option value="urgent">Urgent</option>
+                <option value="normal">Normal</option>
+                <option value="not urgent">Not urgent</option>
+            </select>
+            <select id="sort-options">
+                <option value="time">Time</option>
+                <option value="Alphabetical">Alphabetical</option>
+                <option value="priority">Priority</option>
+                <option value="status">Status</option>
+            </select>
+        </div>
+
+        <ul id=todo-list></ul>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
